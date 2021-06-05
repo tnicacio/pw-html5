@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  
+  <script src="https://kit.fontawesome.com/939df34509.js" crossorigin="anonymous"></script>
+  
+  <style>
+    .like {
+      color: rgb(7, 179, 16);
+    }
+    .dislike {
+      color: #ff2233;
+    }
+
+    .rate {
+      color: rgb(221, 221, 10);
+    }
+  </style>
+
+  <title>FindTiMaterial</title>
+
+</head>
+<body>
+  <div>
+
+    <header>
+      <nav class="navbar bg-light bg-gradient">
+        <div class="container">
+          
+          <a href="./index.html" class="navbar-brand">
+            <img src="images/logo.png" alt="Find TI Materials" id="logo" width="50" >
+          </a>
+
+          <ul class="navbar-nav flex-row fw-bold">
+            <li class="nav-item px-3"><a class="nav-link" href="#">Materiais</a></li>
+            <li class="nav-item px-3"><a class="nav-link" href="#">Enviar Material</a></li>
+            <li class="nav-item ps-3"><a class="nav-link" href="#">Contato</a></li>
+          </ul>
+
+        </div>
+      </nav>
+
+      <div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center"
+        style="background-image: url('./images/banner.jpg'); background-repeat: no-repeat; background-size: cover;">
+        
+        <h1 class="text-white">Site com maior conteúdo gratuito de TI</h1>
+        <p class="text-white">Encontre o que procura de conteúdo para melhorar seu currículo</p>
+
+        <form action="#" class="d-flex justify-content-center align-items-center">
+          <select name="assunto" class="form-select mx-3" id="">
+              <option value="">Selecione o assunto...</option>
+              <option value="WEB">Dev Web</option>
+              <option value="DESKTOP">Dev Desktop</option>
+              <option value="REDES">Redes</option>
+          </select>
+          <select name="area_especifica" class="form-select mx-3" id="">
+              <option value="">Selecione o conteúdo</option>
+              <option value="html5">HTML5</option>
+              <option value="css3">CSS3</option>
+              <option value="javascript">Javascript</option>
+          </select>
+          <input type="submit" class="btn btn-primary fw-bold px-4" value="Buscar">
+      </form>
+      </div>
+
+    </header>
+
+
+    <main class="container min-vh-100 d-flex flex-column align-items-center">
+      <h1 class="text-primary py-5 mt-5">Últimos conteúdos adicionados</h1>
+      <table class="table align-middle text-center" style="line-height: 3;">
+          <thead class="text-secondary">
+              <tr>
+                  <th>Assunto</th>
+                  <th>Área Específica</th>
+                  <th>Conteúdo</th>
+                  <th></th>
+              </tr>
+          </thead>
+          <tbody> 
+              <tr>
+                  <td><span  class="bg-info d-block text-white">WEB </span></td>
+                  <td>HTML5</td>
+                  <td>Introdução ao HTML5</td>
+                  <td class="d-flex justify-content-center align-items-center">
+                    <div>
+                      <div class="like "><i class="fas fa-thumbs-up me-3"></i>6</div>
+                      <div class="dislike"><i class="fas fa-thumbs-down me-3"></i>0</div>
+                    </div>
+                    <div class="rate ms-5">
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td><span  class="bg-info d-block text-white">WEB </span></td>
+                  <td>CSS3</td>
+                  <td>Introdução ao CSS3</td>
+                  <td class="d-flex justify-content-center align-items-center">
+                    <div>
+                      <div class="like "><i class="fas fa-thumbs-up me-3"></i>3</div>
+                      <div class="dislike"><i class="fas fa-thumbs-down me-3"></i>3</div>
+                    </div>
+                    <div class="rate ms-5">
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td><span  class="bg-success d-block text-white">Desktop</span></td>
+                  <td>Visual Basic 6</td>
+                  <td>Introdução ao Visual Basic 6</td>
+                  <td class="d-flex justify-content-center align-items-center">
+                    <div>
+                      <div class="like "><i class="fas fa-thumbs-up me-3"></i>3</div>
+                      <div class="dislike"><i class="fas fa-thumbs-down me-3"></i>3</div>
+                    </div>
+                    <div class="rate ms-5">
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td><span class="bg-secondary d-block text-white">Redes</span></td>
+                  <td>VPN</td>
+                  <td>Introdução a VPNs</td>
+                  <td class="d-flex justify-content-center align-items-center">
+                    <div>
+                      <div class="like "><i class="fas fa-thumbs-up me-3"></i>0</div>
+                      <div class="dislike"><i class="fas fa-thumbs-down me-3"></i>1</div>
+                    </div>
+                    <div class="rate ms-5">
+                      <i class="far fa-star"></i>
+                    </div>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+      <div class="py-5">
+          <a href="todo_conteudo.html" class="btn btn-outline-primary fw-bold px-3 py-2">Ver mais conteúdos</a>
+      </div>
+    </main>
+
+    <section class="container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center "
+      style="background-image: url('./images/bannerjob.png'); background-repeat: no-repeat; background-size: cover;">
+      
+      <div class="container text-white col-md-5 offset-md-6">
+        
+        <div class="row">
+          <h2 class="my-5 ">Envie um conteúdo para o site</h2>
+        </div>
+
+        <div class="row">
+          <p class="col-md-9">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, est ac sollicitudin venenatis,
+            velit dui eleifend felis, quis blandit arcu enim eget nisl. In ac tortor a est tempus aliquet ut et
+            justo. Pellentesque vitae nunc magna. Pellentesque neque orci, facilisis nec sapien sed, blandit
+            fermentum elit. Proin facilisis bibendum sapien non venenatis. Nam tristique viverra cursus. Proin
+            placerat sem vel blandit pulvinar.
+          </p>
+        </div>
+
+        <div class="row">
+          <a href="enviar_conteudo.html" class="btn btn-light text-secondary fw-bold mx-2 px-4 mt-4 w-25">Enviar Conteúdo</a>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="bg-primary text-white" style="height:100%">
+      <div class="container d-flex justify-content-around w-100 py-5">
+
+        <div class="footer-box">
+          <figure>
+            <img src="./images/logo.png" alt="Logo">
+            <figcaption class="py-3">
+                <h2>FindTiMaterial</h2>
+                <p>Todo conteúdo para você</p>
+            </figcaption>
+          </figure>                        
+        </div>
+
+        <div class="colaboradores text-white">
+          <h2>Colaboradores</h2>
+          <ul class="list-unstyled">
+            <li class="my-4">
+              <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                <img src="./images/google.png" alt="Logo" width="32px">
+                <span class="text-white mx-3 fs-5">Google</span>
+              </a>
+            </li>
+            
+            <li class="my-4">
+              <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer"> 
+                <img src="./images/w3cschool.png" alt="Logo" width="32px">
+                <span class="text-white mx-3 fs-5">W3 Schools</span>
+              </a>
+            </li>
+            
+            <li class="my-4">
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                <img src="./images/youtube.png" alt="Logo" width="32px">
+                <span class="text-white mx-3 fs-5">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="redes-sociais">
+          <h2>Nos encontre nas redes sociais</h2>
+          <ul class="list-unstyled">
+            <li class="my-4">
+              <a href="#">
+                <i class="fab fa-facebook-square fa-2x" style="color: white;"></i>
+                <span class="text-white mx-3 fs-5">Facebook</span>
+              </a>
+            </li>
+            <li class="my-4">
+              <a href="#">
+                <i class="fab fa-instagram fa-2x" style="color: white;"></i>
+                <span class="text-white mx-3 fs-5">Instagram</span>
+              </a>
+            </li>
+            <li class="my-4">
+              <a href="#">
+                <i class="fab fa-facebook fa-2x" style="color: white;"></i>
+                <span class="text-white mx-3 fs-5">LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+
+
+  </div>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+</html>

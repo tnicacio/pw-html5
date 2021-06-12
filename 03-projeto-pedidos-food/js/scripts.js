@@ -52,44 +52,8 @@ function productTypeHandler(event) {
   }
 }
 
-function getProductSelectElement() {
-  return document.getElementById('produto');
-}
-
-function getProductQuantityElement() {
-  return document.getElementById('produto_quantidade');
-}
-
 function renderProductSelectList(productType) {
-  const productSelect = getProductSelectElement();
-  const produtoQuantidade = getProductQuantityElement();
-
-  if (!productSelect) {
-    return;
-  }
-
-  const productList = menu
-    .filter((product) => product.type === productType)
-    .sort((a, b) => a.name.localeCompare(b.name));
-
-  let products = [];
-  if (productType === DEFAULT) {
-    products = [...productList];
-  } else {
-    products = [menu[0], ...productList];
-  }
-
-  for (const product of products) {
-    const option = document.createElement('option');
-
-    option.value = product.optionValue;
-    option.text = product.name;
-
-    productSelect.appendChild(option);
-  }
-
-  productSelect.disabled = products.length <= 1;
-  produtoQuantidade.disabled = products.length <= 1;
+  //TO-DO
 }
 
 function clearProductSelectList() {

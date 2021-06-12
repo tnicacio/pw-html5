@@ -1,0 +1,69 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-completo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  background: url('../_img/banner.jpeg') no-repeat;
+  background-size: cover;
+  background-position: 0 100%;
+  height: 100%;
+}
+
+.banner-conteudo {
+  display: flex;
+  padding: 4em 1em;
+  height: 350px;
+  gap: 2rem;
+}
+
+.bg-color-conteudo {
+  background-color: rgba(255, 255, 255, 0.217);
+}
+
+.conteudo-image {
+  width: 350px;
+}
+
+.conteudo-promocao {
+  gap: 2rem;
+}
+
+.produto-promocao {
+  height: 380px;
+  width: 300px;
+}
+
+.img-promocao {
+  height: 150px;
+  width: 100%;
+}
+
+.bg-gray {
+  background-color: rgba(255, 255, 255, 0.048);
+}
+
+#cardapio {
+  background: url('../_img/cardapio.jpg') no-repeat;
+  background-size: cover;
+  background-position: 0 50%;
+}
+
+.bg-color-cardapio {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.select-size {
+  width: 250px;
+}
+
+.input-number-size {
+  width: 75px;
+}

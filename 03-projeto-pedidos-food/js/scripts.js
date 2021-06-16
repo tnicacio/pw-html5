@@ -7,50 +7,41 @@ const menu = [
   {
     id: 0,
     name: DEFAULT_PRODUCT_VALUE,
-    optionValue: '',
+    value: '',
     type: DEFAULT,
   },
 
   {
     id: 1,
     name: 'Chop 300ml',
-    optionValue: 'chop300',
+    value: 'chop300',
     type: BEVERAGE,
   },
   {
     id: 2,
     name: 'Milkshake',
-    optionValue: 'milkshake',
+    value: 'milkshake',
     type: BEVERAGE,
   },
   {
     id: 3,
     name: 'Hamburger',
-    optionValue: 'hamburguer',
+    value: 'hamburguer',
     type: FOOD,
   },
   {
     id: 4,
     name: 'Pizza',
-    optionValue: 'pizza',
+    value: 'pizza',
     type: FOOD,
   },
   {
     id: 5,
     name: 'Coca-cola 500ml',
-    optionValue: 'coca500',
+    value: 'coca500',
     type: BEVERAGE,
   },
 ];
-
-function productTypeHandler(event) {
-  const productType = event?.target?.value;
-
-  if (productType && productType.trim() !== '') {
-    clearProductSelectList();
-    renderProductSelectList(productType);
-  }
-}
 
 function getProductSelectElement() {
   return document.getElementById('produto');
@@ -60,42 +51,57 @@ function getProductQuantityElement() {
   return document.getElementById('produto_quantidade');
 }
 
-function renderProductSelectList(productType) {
-  const productSelect = getProductSelectElement();
-  const produtoQuantidade = getProductQuantityElement();
+function appendOptionsToSelect(options, selectElement) {
+  for (const option of options) {
+    const optionElement = document.createElement('option');
 
-  if (!productSelect) {
+    optionElement.value = option.value;
+    optionElement.text = option.name;
+
+    selectElement.appendChild(optionElement);
+  }
+}
+
+function validateEnablingRuleForFields(rule = () => true, fields = []) {
+  fields.forEach((field) => (field.disabled = !rule()));
+}
+
+function findProductsByTypeOrderByName(type) {
+  const productList = menu
+    .filter((product) => product.type === type)
+    .sort((a, b) => a.name.localeCompare(b.name));
+  return productList;
+}
+
+function filterProductListByTypeWithDefaultOption(type) {
+  let products = findProductsByTypeOrderByName(type);
+
+  if (type === DEFAULT) {
+    return [...products];
+  }
+  return [menu[0], ...products];
+}
+
+function clearChildElementsOf(parentElement) {
+  while (parentElement?.firstChild) {
+    parentElement.removeChild(parentElement.firstChild);
+  }
+}
+
+function productTypeHandler(event) {
+  const productType = event?.target?.value;
+  const productSelect = getProductSelectElement();
+  const productQuantity = getProductQuantityElement();
+
+  if (!productType || !productSelect) {
     return;
   }
 
-  const productList = menu
-    .filter((product) => product.type === productType)
-    .sort((a, b) => a.name.localeCompare(b.name));
+  clearChildElementsOf(productSelect);
 
-  let products = [];
-  if (productType === DEFAULT) {
-    products = [...productList];
-  } else {
-    products = [menu[0], ...productList];
-  }
+  const productOptions = filterProductListByTypeWithDefaultOption(productType);
+  appendOptionsToSelect(productOptions, productSelect);
 
-  for (const product of products) {
-    const option = document.createElement('option');
-
-    option.value = product.optionValue;
-    option.text = product.name;
-
-    productSelect.appendChild(option);
-  }
-
-  productSelect.disabled = products.length <= 1;
-  produtoQuantidade.disabled = products.length <= 1;
-}
-
-function clearProductSelectList() {
-  const productSelect = document.getElementById('produto');
-
-  while (productSelect?.firstChild) {
-    productSelect.removeChild(productSelect.firstChild);
-  }
+  const fields = [productSelect, productQuantity];
+  validateEnablingRuleForFields(() => productOptions.length > 1, fields);
 }

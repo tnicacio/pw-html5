@@ -73,7 +73,7 @@ function findProductsByTypeOrderByName(type) {
   return productList;
 }
 
-function filterProductListByTypeWithDefaultOption(type) {
+function filterProductListByTypeWithDefaultValue(type) {
   let products = findProductsByTypeOrderByName(type);
 
   if (type === DEFAULT) {
@@ -99,7 +99,7 @@ function productTypeHandler(event) {
 
   clearChildElementsOf(productSelect);
 
-  const productOptions = filterProductListByTypeWithDefaultOption(productType);
+  const productOptions = filterProductListByTypeWithDefaultValue(productType);
   appendOptionsToSelect(productOptions, productSelect);
 
   const fields = [productSelect, productQuantity];

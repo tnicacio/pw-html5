@@ -1,0 +1,704 @@
+{
+  "nextId": 8,
+  "data": [
+    {
+      "id": 1,
+      "name": "Wherever You Will Go",
+      "artist": "The Calling",
+      "songPath": "./songs/The Calling - Wherever You Will Go.mp3",
+      "videoPath": "./videos/The Calling - Wherever You Will Go.mp4",
+      "lyrics": [
+        {
+          "language": "en",
+          "paragraphs": [
+            {
+              "id": 1,
+              "lines": [
+                "So lately, been wondering",
+                "Who will be there to take my place?",
+                "When I'm gone, you'll need love",
+                "To light the shadows on your face",
+                "If a great wave shall fall",
+                "And fall upon us all",
+                "Then between the sand and stone",
+                "Could you make it on your own?"
+              ]
+            },
+            {
+              "id": 2,
+              "lines": [
+                "If I could, then I would",
+                "I'll go wherever you will go",
+                "Way up high or down low",
+                "I'll go wherever you will go"
+              ]
+            },
+            {
+              "id": 3,
+              "lines": [
+                "And maybe, I'll find out",
+                "A way to make it back someday",
+                "To watch you, to guide you",
+                "Through the darkest of your days",
+                "If a great wave shall fall",
+                "And fall upon us all",
+                "Then I hope there's someone out there",
+                "Who can bring me back to you"
+              ]
+            },
+            {
+              "id": 4,
+              "lines": [
+                "If I could, then I would",
+                "I'll go wherever you will go",
+                "Way up high or down low",
+                "I'll go wherever you will go"
+              ]
+            },
+            {
+              "id": 5,
+              "lines": [
+                "Run away with my heart",
+                "Run away with my hope",
+                "Run away with my love"
+              ]
+            },
+            {
+              "id": 6,
+              "lines": [
+                "I know now, just quite how",
+                "My life and love might still go on",
+                "In your heart, in your mind",
+                "I'll stay with you for all of time"
+              ]
+            },
+            {
+              "id": 7,
+              "lines": [
+                "If I could, then I would",
+                "I'll go wherever you will go",
+                "Way up high or down low",
+                "I'll go wherever you will go"
+              ]
+            },
+            {
+              "id": 8,
+              "lines": [
+                "If I could turn back time",
+                "I'll go wherever you will go",
+                "If I could make you mine",
+                "I'll go wherever you will go",
+                "I'll go wherever you will go"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Anna Molly",
+      "artist": "Incubus",
+      "songPath": "./songs/Incubus - Anna Molly.mp3",
+      "videoPath": "./videos/Incubus - Anna Molly.mp4",
+      "lyrics": [
+        {
+          "language": "en",
+          "paragraphs": [
+            {
+              "id": 1,
+              "lines": [
+                "A cloud hangs over it's a city by the sea",
+                "I watch the ships pass and wonder if she might be",
+                "Out there and sober as a well for loneliness",
+                "Please do persist girl, its time we met and made a mess"
+              ]
+            },
+            {
+              "id": 2,
+              "lines": [
+                "I picture your face in the back of my eyes",
+                "A fire in the attic, a proof of the prize",
+                "Anna Molly, Anna Molly, annomally"
+              ]
+            },
+            {
+              "id": 3,
+              "lines": [
+                "A cloud hangs over and mutes my happiness",
+                "A thousand ships couldn't send me back from distress",
+                "Wish you were here, I'm a wounded satellite",
+                "I need you now put me back together make me right"
+              ]
+            },
+            {
+              "id": 4,
+              "lines": [
+                "I picture your face in the back of my eyes",
+                "A fire in the attic, a proof of the prize",
+                "Anna Molly, Anna Molly, annomally"
+              ]
+            },
+            {
+              "id": 5,
+              "lines": [
+                "I'm calling your name up into the air",
+                "Nobody of the others could ever compare",
+                "Anna Molly, annomally"
+              ]
+            },
+            {
+              "id": 6,
+              "lines": [
+                "Wait there is a light",
+                "There is a fire illuminated attic",
+                "Fate or something better I couldn't care less",
+                "Just stay with me a while"
+              ]
+            },
+            {
+              "id": 7,
+              "lines": [
+                "Wait there is a light, there is a fire",
+                "Defragmenting the attic",
+                "Fate or something better I couldn't care less",
+                "Just stay with me a while"
+              ]
+            },
+            {
+              "id": 8,
+              "lines": [
+                "I picture your face in the back of my eyes",
+                "A fire in the attic a proof of the prize",
+                "Anna Molly, annomally, Anna Molly"
+              ]
+            },
+            {
+              "id": 9,
+              "lines": [
+                "I'm calling your name up into the air",
+                "Nobody of the others could ever compare",
+                "Anna Molly, annomally"
+              ]
+            },
+            {
+              "id": 10,
+              "lines": [
+                "(Annomally)",
+                "Wait there is a light there is a fire",
+                "Defragmenting the attic",
+                "(Annomally)",
+                "Fate or something better I couldn't care less",
+                "Just stay with me a while"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "G.O.A.T.",
+      "artist": "Polyphia",
+      "songPath": "./songs/Polyphia - G.O.A.T..mp3",
+      "videoPath": "./videos/Polyphia - G.O.A.T..mp4",
+      "lyrics": [
+        {
+          "language": "en",
+          "paragraphs": [
+            {
+              "id": 1,
+              "lines": ["Instrumental"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Be Yourself",
+      "artist": "Audioslave",
+      "songPath": "./songs/Audioslave - Be Yourself.mp3",
+      "videoPath": "./videos/Audioslave - Be Yourself.mp4",
+      "lyrics": [
+        {
+          "language": "en",
+          "paragraphs": [
+            {
+              "id": 1,
+              "lines": [
+                "Someone falls to pieces, sleeping all alone",
+                "Someone kills the pain",
+                "Spinning in the silence",
+                "She finally drifts away"
+              ]
+            },
+            {
+              "id": 2,
+              "lines": [
+                "Someone gets excited in a chapel-yard",
+                "And catches a bouquet",
+                "Another lays a dozen",
+                "White roses on a grave"
+              ]
+            },
+            {
+              "id": 3,
+              "lines": [
+                "Yeah",
+                "And to be yourself is all that you can do",
+                "Hey",
+                "To be yourself is all that you can do"
+              ]
+            },
+            {
+              "id": 4,
+              "lines": [
+                "Someone finds salvation in everyone",
+                "Another only pain",
+                "Someone tries to hide himself",
+                "Down inside himself he prays"
+              ]
+            },
+            {
+              "id": 5,
+              "lines": [
+                "Someone swears his true love",
+                "Until the end of time",
+                "Another runs away",
+                "Separate or united, healthy or insane"
+              ]
+            },
+            {
+              "id": 6,
+              "lines": [
+                "And to be yourself is all that you can do",
+                "(All that you can do)",
+                "To be yourself is all that you can do",
+                "(All that you can do)",
+                "To be yourself is all that you can do",
+                "(All that you can do)",
+                "To be yourself is all that you can do"
+              ]
+            },
+            {
+              "id": 7,
+              "lines": [
+                "And even when you've paid enough",
+                "Been pulled apart or been held up",
+                "Every single memory of the good or bad",
+                "Faces of luck",
+                "Don't lose any sleep tonight",
+                "I'm sure everything will end up alright",
+                "You may win or lose",
+                "But to be yourself is all that you can do",
+                "Yeah",
+                "To be yourself is all that you can do"
+              ]
+            },
+            {
+              "id": 8,
+              "lines": [
+                "To be yourself is all that you can do",
+                "(All that you can do)",
+                "To be yourself is all that you can do",
+                "(All that you can do)",
+                "To be yourself is all that you can",
+                "To be yourself is all that you can",
+                "To be yourself is all that you can do"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Drive",
+      "artist": "Incubus",
+      "songPath": "./songs/Incubus - Drive.mp3",
+      "videoPath": "./videos/Incubus - Drive.mp4",
+      "lyrics": [
+        {
+          "language": "en",
+          "paragraphs": [
+            {
+              "id": 1,
+              "lines": [
+                "Sometimes I feel the fear",
+                "Of uncertainty stinging clear",
+                "And I can't help but ask myself how much",
+                "I'll let the fear take the wheel and steer"
+              ]
+            },
+            {
+              "id": 2,
+              "lines": [
+                "It's driven me before",
+                "And it seems to have a vague",
+                "Haunting mass appeal",
+                "But lately I'm beginning to find that",
+                "I should be the one behind the wheel"
+              ]
+            },
+            {
+              "id": 3,
+              "lines": [
+                "Whatever tomorrow brings I'll be there",
+                "With open arms and open eyes, yeah",
+                "Whatever tomorrow brings I'll be there",
+                "I'll be there"
+              ]
+            },
+            {
+              "id": 4,
+              "lines": [
+                "So if I decide to waiver my chance",
+                "To be one of the hive",
+                "Will I choose water over wine",
+                "And hold my own and drive? Oh, oh, oh"
+              ]
+            },
+            {
+              "id": 5,
+              "lines": [
+                "It's driven me before",
+                "And it seems to be the way",
+                "That everyone else gets around",
+                "But lately I'm beginning to find that",
+                "When I drive myself my light is found"
+              ]
+            },
+            {
+              "id": 6,
+              "lines": [
+                "Whatever tomorrow brings I'll be there",
+                "With open arms and open eyes, yeah",
+                "Whatever tomorrow brings I'll be there",
+                "I'll be there"
+              ]
+            },
+            {
+              "id": 7,
+              "lines": [
+                "Would you choose water over wine",
+                "Hold the wheel and drive"
+              ]
+            },
+            {
+              "id": 8,
+              "lines": [
+                "Whatever tomorrow brings I'll be there",
+                "With open arms and open eyes, yeah",
+                "Whatever tomorrow brings I'll be there",
+                "I'll be there"
+              ]
+            },
+            {
+              "id": 9,
+              "lines": [
+                "Do, do, do",
+                "Do, do, do",
+                "Do, do, do, do, do",
+                "Whoa, oh, oh"
+              ]
+            },
+            {
+              "id": 10,
+              "lines": [
+                "Do, do, do, do, do",
+                "Do, do, do",
+                "Do, do, do",
+                "Do, do, do, do, do",
+                "Whoa, oh, oh, oh, oh"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Dont Forget Me",
+      "artist": "Red Hot Chili Peppers",
+      "songPath": "./songs/Red Hot Chili Peppers - Dont Forget Me.mp3",
+      "videoPath": "./videos/Red Hot Chili Peppers - Dont Forget Me.mp4",
+      "lyrics": [
+        {
+          "language": "en",
+          "paragraphs": [
+            {
+              "id": 1,
+              "lines": [
+                "I'm an ocean in your bedroom",
+                "Make you feel warm",
+                "Make you want to re-assume",
+                "Now we know it all for sure"
+              ]
+            },
+            {
+              "id": 2,
+              "lines": [
+                "I'm a dance hall dirty breakbeat",
+                "Make the snow fall",
+                "Up from underneath your feet",
+                "Not alone, I'll be there",
+                "Tell me when you wanna go"
+              ]
+            },
+            {
+              "id": 3,
+              "lines": [
+                "I'm a meth lab first rehab",
+                "Take it all off",
+                "And step inside the running cab",
+                "There's a love that knows the way"
+              ]
+            },
+            {
+              "id": 4,
+              "lines": [
+                "I'm the rainbow in your jail cell",
+                "All the memories of",
+                "Everything you've ever smelled",
+                "Not alone, I'll be there",
+                "Tell me when you wanna go"
+              ]
+            },
+            {
+              "id": 5,
+              "lines": [
+                "(Sideways falling",
+                "More will be revealed my friend)",
+                "Don't forget me",
+                "I can't hide it",
+                "Come again make me excited"
+              ]
+            },
+            {
+              "id": 6,
+              "lines": [
+                "I'm an inbred and a pothead",
+                "Two legs that you spread",
+                "Inside the tool shed",
+                "Now we know it all for sure"
+              ]
+            },
+            {
+              "id": 7,
+              "lines": [
+                "I could show you",
+                "To the free field",
+                "Overcome and more",
+                "Will always be revealed",
+                "Not alone, I'll be there",
+                "Tell me when you wanna go"
+              ]
+            },
+            {
+              "id": 8,
+              "lines": [
+                "(Sideways falling",
+                "More will be revealed my friend)",
+                "Don't forget me",
+                "I can't hide it",
+                "Come again get me excited"
+              ]
+            },
+            {
+              "id": 9,
+              "lines": [
+                "(Sideways falling",
+                "More will be revealed my friend)",
+                "Don't forget me I can't hide it",
+                "There's a match now let me light it"
+              ]
+            },
+            {
+              "id": 10,
+              "lines": [
+                "I'm the bloodstain",
+                "On your shirt sleeve",
+                "Coming down and more are coming to believe",
+                "Now we know it all for sure"
+              ]
+            },
+            {
+              "id": 11,
+              "lines": [
+                "Make the hair stand",
+                "Up on your arm",
+                "Teach you how to dance",
+                "Inside the funny farm",
+                "Not alone, I'll be there",
+                "Tell me when you wanna go"
+              ]
+            },
+            {
+              "id": 12,
+              "lines": [
+                "I'll be there, tell me when you wanna go",
+                "Come again and tell me when you wanna go",
+                "(More will be revealed my friend)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Snow",
+      "artist": "Red Hot Chili Peppers",
+      "songPath": "./songs/Red Hot Chili Peppers - Snow.mp3",
+      "videoPath": "./videos/Red Hot Chili Peppers - Snow.mp4",
+      "lyrics": [
+        {
+          "language": "en",
+          "paragraphs": [
+            {
+              "id": 1,
+              "lines": [
+                "Come to decide that the things that I tried",
+                "Were in my life just to get high on",
+                "When I sit alone, come get a little known",
+                "But I need more than myself this time",
+                "Step from the road to the sea to the sky",
+                "And I do believe it, we rely on",
+                "When I lay it on, come get to play it on",
+                "All my life to sacrifice"
+              ]
+            },
+            {
+              "id": 2,
+              "lines": [
+                "Hey, oh",
+                "Listen what I say, oh",
+                "I got your hey, oh",
+                "Now listen what I say, oh"
+              ]
+            },
+            {
+              "id": 3,
+              "lines": [
+                "When will I know that I really can’t go",
+                "To the well once more time to decide on",
+                "When it’s killing me, when will I really see",
+                "All that I need to look inside?",
+                "Come to believe that I better not leave",
+                "Before I get my chance to ride",
+                "When it’s killing me, what do I really need",
+                "All that I need to look inside?"
+              ]
+            },
+            {
+              "id": 4,
+              "lines": [
+                "Hey, oh",
+                "Listen what I say, oh",
+                "Come back and hey, oh",
+                "Look at what I say, oh"
+              ]
+            },
+            {
+              "id": 5,
+              "lines": [
+                "The more I see the less I know",
+                "The more I like to let it go",
+                "Hey, oh",
+                "Whoa-whoa"
+              ]
+            },
+            {
+              "id": 6,
+              "lines": [
+                "Deep beneath the cover of another perfect wonder",
+                "Where it’s so white as snow",
+                "Privately divided by a world so undecided",
+                "And there’s nowhere to go",
+                "In between the cover of another perfect wonder",
+                "Where so white as snow",
+                "Running through the field where all my tracks will be concealed",
+                "And there's nowhere to go, oh"
+              ]
+            },
+            {
+              "id": 7,
+              "lines": [
+                "When to descend to amend for a friend",
+                "All the channels that have broken down",
+                "Now you bring it up, I’m gonna ring it up",
+                "Just to hear you sing it out",
+                "Step from the road to the sea to the sky",
+                "And I do believe it, we rely on",
+                "When I lay it on, come get to play it on",
+                "All my life to sacrifice"
+              ]
+            },
+            {
+              "id": 8,
+              "lines": [
+                "Hey, oh",
+                "Listen what I say, oh",
+                "I got your hey, oh",
+                "Listen what I say, oh"
+              ]
+            },
+            {
+              "id": 9,
+              "lines": [
+                "The more I see the less I know",
+                "The more I like to let it go",
+                "Hey, oh",
+                "Whoa-whoa"
+              ]
+            },
+            {
+              "id": 10,
+              "lines": [
+                "Deep beneath the cover of another perfect wonder",
+                "Where it’s so white as snow",
+                "Privately divided by a world so undecided",
+                "And there's nowhere to go",
+                "In between the cover of another perfect wonder",
+                "Where it's so white as snow",
+                "Running through the field where all my tracks will be concealed",
+                "And there's nowhere to go"
+              ]
+            },
+            {
+              "id": 11,
+              "lines": [
+                "I said hey, hey, yeah, oh, yeah",
+                "Tell my lord now",
+                "Hey, yeah, hey, yeah, oh, yeah",
+                "Tell my lord now"
+              ]
+            },
+            {
+              "id": 12,
+              "lines": [
+                "Deep beneath the cover of another perfect wonder",
+                "Where it's so white as snow",
+                "Privately divided by a world so undecided",
+                "And there's nowhere to go",
+                "In between the cover of another perfect wonder",
+                "Where it's so white as snow",
+                "Running through the field where all my tracks will be concealed",
+                "And there's nowhere to go"
+              ]
+            },
+            {
+              "id": 13,
+              "lines": [
+                "I said hey, oh, yeah, oh, yeah",
+                "Tell my love now",
+                "Hey, hey, yeah, oh, yeah"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

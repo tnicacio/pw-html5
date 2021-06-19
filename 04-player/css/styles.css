@@ -1,0 +1,85 @@
+:root {
+  --lighter-gray: #717d88b7;
+  --light-gray: #454c52;
+  --gray-transparent: #2a303523;
+  --gray: #2a3035;
+  --dark: #212529;
+  --darker: #121212;
+  --black: #000000;
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-darker {
+  background-color: var(--darker);
+}
+
+.bg-dark-custom {
+  background-color: var(--dark);
+}
+.bg-gray {
+  background-color: var(--gray);
+}
+
+::-webkit-scrollbar {
+  background-color: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--lighter-gray);
+}
+
+.search-input:focus {
+  background-color: var(--gray);
+  color: white;
+}
+
+.link-secondary {
+  transition: color 0.2s;
+}
+
+.link-secondary:hover {
+  color: white;
+}
+
+.active {
+  color: white;
+  background-color: var(--dark);
+  border-radius: 5px;
+}
+
+.border-gray {
+  border-top: 1px solid var(--gray);
+}
+
+.card-size {
+  height: 100%;
+}
+
+.pagination-style {
+  align-items: flex-end;
+  min-height: 4rem;
+}
+
+.border-spacing {
+  border-collapse: separate;
+  border-spacing: 0 0.1rem;
+}
+
+.table-row-effects {
+  background-color: var(--gray-transparent);
+}
+
+.table-row-effects:hover td {
+  background-color: var(--gray);
+}
+
+.row-active {
+  background-color: var(--gray);
+}

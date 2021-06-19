@@ -3,8 +3,6 @@ $(document).ready(async function () {
   const myFavs = await fetchMyFavs();
   const myFavsMusicIds = myFavs.map((x) => x.musicId);
 
-  console.log(myFavs);
-
   const allSongsOrderedByArtist = allSongs.sort((a, b) =>
     a.artist.localeCompare(b.artist)
   );
@@ -16,8 +14,6 @@ $(document).ready(async function () {
     const music = $(this).attr('dt-info-m');
     const title = $(this).attr('dt-info-title');
     const artist = $(this).attr('dt-info-artist');
-
-    console.log('Escolheu a música: ' + './database/songs/' + music + '.mp3');
 
     const songSelected = findSongByNameAndArtist(title, artist, allSongs);
     const rowSelected = $(`#song-${songSelected.id}`)[0];
@@ -44,18 +40,16 @@ $(document).ready(async function () {
       .clone();
 
     rowSelected.classList.add('row-active');
-    $(this).html('<i class="fas fa-pause"></i>');
-    $(this).attr({ playing: true });
     lastRowSelected = rowSelected;
 
     appendMusicAudioToAudioFooter(srcMusic, songSelected);
     appendVideoToVideoMusicCard(srcVideo);
     appendArticleToVideoCardWithLyricsInformation(songSelected);
+    resumeMusic($(this));
   });
 
   $('.heart').click(function () {
     let isFave = $(this).attr('favourite') === 'true';
-    console.log(isFave);
     $(this).attr('favourite', !isFave);
     $(this).html(getHeartoIcon(!isFave));
   });

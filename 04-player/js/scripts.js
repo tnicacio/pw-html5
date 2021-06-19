@@ -3,8 +3,6 @@ $(document).ready(async function () {
   const myFavs = await fetchMyFavs();
   const myFavsMusicIds = myFavs.map((x) => x.musicId);
 
-  console.log(myFavs);
-
   const allSongsOrderedByArtist = allSongs.sort((a, b) =>
     a.artist.localeCompare(b.artist)
   );
@@ -55,7 +53,6 @@ $(document).ready(async function () {
 
   $('.heart').click(function () {
     let isFave = $(this).attr('favourite') === 'true';
-    console.log(isFave);
     $(this).attr('favourite', !isFave);
     $(this).html(getHeartoIcon(!isFave));
   });

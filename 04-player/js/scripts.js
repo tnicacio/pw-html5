@@ -15,8 +15,6 @@ $(document).ready(async function () {
     const title = $(this).attr('dt-info-title');
     const artist = $(this).attr('dt-info-artist');
 
-    console.log('Escolheu a música: ' + './database/songs/' + music + '.mp3');
-
     const songSelected = findSongByNameAndArtist(title, artist, allSongs);
     const rowSelected = $(`#song-${songSelected.id}`)[0];
     const selectedSameRowAsBefore = rowSelected === lastRowSelected;
@@ -42,13 +40,12 @@ $(document).ready(async function () {
       .clone();
 
     rowSelected.classList.add('row-active');
-    $(this).html('<i class="fas fa-pause"></i>');
-    $(this).attr({ playing: true });
     lastRowSelected = rowSelected;
 
     appendMusicAudioToAudioFooter(srcMusic, songSelected);
     appendVideoToVideoMusicCard(srcVideo);
     appendArticleToVideoCardWithLyricsInformation(songSelected);
+    resumeMusic($(this));
   });
 
   $('.heart').click(function () {

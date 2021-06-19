@@ -141,12 +141,12 @@ async function populateSongTable(songs, myFavsMusicIds) {
     return (tableBody += `<tr class="align-middle text-secondary shadow-sm table-row-effects mx-3" id="song-${song.id}">
           
             <td class="text-center">
-              <a href="#" class="play" dt-info-m="${song.artist} - ${song.name}" dt-info-artist="${song.artist}" dt-info-title="${song.name}">
+              <a role="button" class="play" dt-info-m="${song.artist} - ${song.name}" dt-info-artist="${song.artist}" dt-info-title="${song.name}">
                 <i class="fas fa-play"></i>
               </a>
             </td>
             <td class="text-center">
-              <a href="#" class="heart" id="heart-${song.id}" favourite="${isFaveSong}">
+              <a role="button" class="heart" id="heart-${song.id}" favourite="${isFaveSong}">
                 ${heartoIcon}
               </a>
             </td>

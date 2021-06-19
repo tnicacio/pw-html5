@@ -1,4 +1,7 @@
 :root {
+  --green: #2ece83;
+  --light-purple: #b49bc8;
+  --purple: rgb(180, 155, 200);
   --lighter-gray: #717d88b7;
   --light-gray: #454c52;
   --gray-transparent: #2a303523;
@@ -6,6 +9,10 @@
   --dark: #212529;
   --darker: #121212;
   --black: #000000;
+}
+
+.bg-purple {
+  background-color: var(--purple);
 }
 
 .bg-black {
@@ -82,4 +89,12 @@
 
 .row-active {
   background-color: var(--gray);
+}
+
+.hover-link {
+  color: white;
+}
+
+.hover-link:hover {
+  color: var(--green);
 }

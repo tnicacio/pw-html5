@@ -1,3 +1,68 @@
+let allSongsOrderedByArtist = [];
+let myFavsMusicIds = [];
+let lastRowSelected = null;
+
+$('body').on('click', '.play', async function () {
+  const title = $(this).attr('dt-info-title');
+  const artist = $(this).attr('dt-info-artist');
+
+  const songSelected = findSongByNameAndArtist(
+    title,
+    artist,
+    allSongsOrderedByArtist
+  );
+  const rowSelected = $(`#song-${songSelected.id}`)[0];
+  const selectedSameRowAsBefore = rowSelected === lastRowSelected;
+  const isPlaying = $(this).attr('playing') || false;
+
+  if (selectedSameRowAsBefore && isPlaying) {
+    await pauseMusic($(this));
+    return;
+  }
+
+  if (selectedSameRowAsBefore && !isPlaying) {
+    await resumeMusic($(this));
+    return;
+  }
+
+  setLastRowNotActive(lastRowSelected);
+
+  const srcMusic = $('#src-music')
+    .attr({ src: `./database/${songSelected.songPath}` })
+    .clone();
+  const srcVideo = $('#src-video')
+    .attr({ src: `./database/${songSelected.videoPath}` })
+    .clone();
+
+  rowSelected.classList.add('row-active');
+  lastRowSelected = rowSelected;
+
+  appendMusicAudioToAudioFooter(srcMusic, songSelected);
+  appendVideoToVideoMusicCard(srcVideo);
+  appendArticleToVideoCardWithLyricsInformation(songSelected);
+  await resumeMusic($(this));
+});
+
+$('body').on('click', '.heart', function () {
+  let isFave = $(this).attr('favourite') === 'true';
+  $(this).attr('favourite', !isFave);
+  $(this).html(getHeartoIcon(!isFave));
+});
+
+$('#find-music').click(async function (event) {
+  event.preventDefault();
+  const songOrArtistToFind =
+    $('#search-music')?.val()?.trim()?.toLowerCase() || '';
+
+  newAllSongsOrderedByArtist = allSongsOrderedByArtist.filter(
+    (song) =>
+      song.lowerCaseName?.includes(songOrArtistToFind) ||
+      song.lowerCaseArtist?.includes(songOrArtistToFind)
+  );
+
+  await populateSongTable(newAllSongsOrderedByArtist, myFavsMusicIds);
+});
+
 $(document).ready(async function () {
   const allSongs = (await fetchSongs())?.data;
 
@@ -9,73 +74,14 @@ $(document).ready(async function () {
     };
   });
 
-  const myFavs = await fetchMyFavs();
-  const myFavsMusicIds = myFavs.map((x) => x.musicId);
-
-  const allSongsOrderedByArtist = allSongsFormatted.sort((a, b) =>
+  allSongsOrderedByArtist = allSongsFormatted.sort((a, b) =>
     a.artist.localeCompare(b.artist)
   );
-  let lastRowSelected = null;
+
+  const myFavs = await fetchMyFavs();
+  myFavsMusicIds = myFavs.map((x) => x.musicId);
 
   await populateSongTable(allSongsOrderedByArtist, myFavsMusicIds);
-
-  $('#find-music').click(function (event) {
-    event.preventDefault();
-    const songOrArtistToFind =
-      $('#search-music')?.val()?.trim()?.toLowerCase() || '';
-
-    newAllSongsOrderedByArtist = allSongsOrderedByArtist.filter(
-      (song) =>
-        song.lowerCaseName?.includes(songOrArtistToFind) ||
-        song.lowerCaseArtist?.includes(songOrArtistToFind)
-    );
-
-    populateSongTable(newAllSongsOrderedByArtist, myFavsMusicIds);
-  });
-
-  $('.play').click(function () {
-    const music = $(this).attr('dt-info-m');
-    const title = $(this).attr('dt-info-title');
-    const artist = $(this).attr('dt-info-artist');
-
-    const songSelected = findSongByNameAndArtist(title, artist, allSongs);
-    const rowSelected = $(`#song-${songSelected.id}`)[0];
-    const selectedSameRowAsBefore = rowSelected === lastRowSelected;
-    const isPlaying = $(this).attr('playing') || false;
-
-    if (selectedSameRowAsBefore && isPlaying) {
-      pauseMusic($(this));
-      return;
-    }
-
-    if (selectedSameRowAsBefore && !isPlaying) {
-      resumeMusic($(this));
-      return;
-    }
-
-    setLastRowNotActive(lastRowSelected);
-
-    const srcMusic = $('#src-music')
-      .attr({ src: `./database/${songSelected.songPath}` })
-      .clone();
-    const srcVideo = $('#src-video')
-      .attr({ src: `./database/${songSelected.videoPath}` })
-      .clone();
-
-    rowSelected.classList.add('row-active');
-    lastRowSelected = rowSelected;
-
-    appendMusicAudioToAudioFooter(srcMusic, songSelected);
-    appendVideoToVideoMusicCard(srcVideo);
-    appendArticleToVideoCardWithLyricsInformation(songSelected);
-    resumeMusic($(this));
-  });
-
-  $('.heart').click(function () {
-    let isFave = $(this).attr('favourite') === 'true';
-    $(this).attr('favourite', !isFave);
-    $(this).html(getHeartoIcon(!isFave));
-  });
 });
 
 function setLastRowNotActive(lastRowSelected) {
@@ -87,18 +93,18 @@ function setLastRowNotActive(lastRowSelected) {
     '<i class="fas fa-play"></i>';
 }
 
-function pauseMusic(playTableRowElement) {
+async function pauseMusic(playTableRowElement) {
   $(playTableRowElement).html('<i class="fas fa-play"></i>');
   $(playTableRowElement).removeAttr('playing');
-  $('#audio')[0]?.pause();
-  $('video')[0].pause();
+  await $('#audio')[0]?.pause();
+  await $('video')[0].pause();
 }
 
-function resumeMusic(playTableRowElement) {
+async function resumeMusic(playTableRowElement) {
   $(playTableRowElement).html('<i class="fas fa-pause"></i>');
   $(playTableRowElement).attr({ playing: true });
-  $('#audio')[0]?.play();
-  $('video')[0].play();
+  await $('#audio')[0]?.play();
+  await $('video')[0].play();
 }
 
 function appendMusicAudioToAudioFooter(srcMusic, { name, artist }) {

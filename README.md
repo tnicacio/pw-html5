@@ -1,10 +1,10 @@
+
 # PW HTML5
 > Projetos desenvolvidos na turma de HTML5 da Proway, com aulas aos sábados no período de 29/mai/2021 a 19/06/2021.
 > Aulas ministradas por mim, Tiago Nicácio.
 
 ## Find TI Material
 Protótipo de site para servir de acervo para conteúdos relacionados à Tecnologia da Informação.
-
 
 ### Conteúdo do site
 - Barra de navegação no topo do site;
@@ -13,11 +13,10 @@ Protótipo de site para servir de acervo para conteúdos relacionados à Tecnolo
 - Footer contendo listas de links dos colaboradores, e também as redes sociais da plataforma.
 
 ### Layout
-
+![find-ti-material](https://user-images.githubusercontent.com/50798315/122660287-c2c4c480-d156-11eb-832c-60cd93c4fb75.png)
 
 ## Pedidos Foood
 Protótipo de delivery de um restaurante.
-
 
 ### Conteúdo do site
 - Barra de navegação no topo do site;
@@ -27,6 +26,7 @@ Protótipo de delivery de um restaurante.
 - Rodapé contendo informações do restaurante, lista dos cartões aceitos e também uma lista das redes sociais.
 
 ### Layout
+![pedidos-food](https://user-images.githubusercontent.com/50798315/122660300-d07a4a00-d156-11eb-8a3e-fc5805cedca4.png)
 
 ## Player
 Protótipo de plataforma para ouvir e assistir vídeos de músicas. <br/>
@@ -51,4 +51,5 @@ Obs: Atualmente a opção Entrar leva à segunda página. As demais opções da 
 - Rodapé mostrando o nome do artista e da música selecionada, e com o player de áudio disposto de forma centralizada com relação à tabela de músicas.
 
 ### Layout
+![player](https://user-images.githubusercontent.com/50798315/122660346-3a92ef00-d157-11eb-8459-a3f3829d8320.png)
 

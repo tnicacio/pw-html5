@@ -1,14 +1,37 @@
 $(document).ready(async function () {
   const allSongs = (await fetchSongs())?.data;
+
+  const allSongsFormatted = allSongs.map((song) => {
+    return {
+      ...song,
+      lowerCaseName: song.name?.toLowerCase(),
+      lowerCaseArtist: song.artist?.toLowerCase(),
+    };
+  });
+
   const myFavs = await fetchMyFavs();
   const myFavsMusicIds = myFavs.map((x) => x.musicId);
 
-  const allSongsOrderedByArtist = allSongs.sort((a, b) =>
+  const allSongsOrderedByArtist = allSongsFormatted.sort((a, b) =>
     a.artist.localeCompare(b.artist)
   );
   let lastRowSelected = null;
 
   await populateSongTable(allSongsOrderedByArtist, myFavsMusicIds);
+
+  $('#find-music').click(function (event) {
+    event.preventDefault();
+    const songOrArtistToFind =
+      $('#search-music')?.val()?.trim()?.toLowerCase() || '';
+
+    newAllSongsOrderedByArtist = allSongsOrderedByArtist.filter(
+      (song) =>
+        song.lowerCaseName?.includes(songOrArtistToFind) ||
+        song.lowerCaseArtist?.includes(songOrArtistToFind)
+    );
+
+    populateSongTable(newAllSongsOrderedByArtist, myFavsMusicIds);
+  });
 
   $('.play').click(function () {
     const music = $(this).attr('dt-info-m');

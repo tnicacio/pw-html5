@@ -30,7 +30,7 @@ Protótipo de delivery de um restaurante.
 
 ## Player
 Protótipo de plataforma para ouvir e assistir vídeos de músicas. <br/>
-https://pw-player.netlify.app/search.html
+https://pw-player.netlify.app
 
 ### Conteúdo do site
 Foram desenvolvidos protótipos de duas páginas da plataforma: página inicial e página de buscas. <br/>

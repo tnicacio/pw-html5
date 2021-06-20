@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Player</title>
+    <title>Document</title>
+
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
@@ -14,143 +15,91 @@
     />
     <!-- Folha de Estila Externa -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/939df34509.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
+
   <body>
     <div class="bg-dark vh-100">
-      
-      <div class="d-flex" style="height:80%">
-        
-        <nav class="col-2 px-3 py-4 bg-darker text-white" >
-          <a href="" class="navbar-brand link-light">
-            <div class="d-flex align-items-center gap-3 ps-3">
-              <img src="./img/logo.png" alt="" width="30px" />
-              <h1 class="fs-3 fw-bold">Player</h1>
-            </div>
-          </a>
-  
-          <ul class="navbar-nav flex-column fw-bold py-3">
-            <li class="nav-item">
-              <a class="nav-link link-secondary px-3" href="">
-                <i class="fas fa-home"></i>
-                <span class="mx-2">Início<span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-secondary px-3 active" href="">
-                <i class="fas fa-search"></i>
-                <span class="mx-2">Buscar<span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-secondary px-3" href="">
-                <i class="fas fa-book-open"></i>
-                <span class="mx-2">Sua Biblioteca<span>
-              </a>
-            </li>
-          </ul>
-  
-          <ul class="navbar-nav fw-bold">
-            <li class="nav-item">
-              <a class="nav-link link-secondary px-3" href="">
-                <i class="fas fa-plus-square"></i> <span class="mx-2">Criar playlist</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-secondary px-3 " href="">
-                <i class="fas fa-heart"></i> <span class="mx-2">Músicas Curtidas</span>
-              </a>
-            </li>
-          </ul>
-  
-          <div class="px-3">
-            <hr/>
+      <header style="height: 12%">
+        <nav class="navbar bg-black h-100">
+          <div class="container">
+            <a href="./search.html" class="navbar-brand link-light">
+              <div class="d-flex align-items-center gap-3 ps-3">
+                <img src="./img/logo.png" alt="Player" width="30px" />
+                <h1 class="fs-3 fw-bold">Player</h1>
+              </div>
+            </a>
+
+            <ul class="navbar-nav flex-row fw-bold d-flex gap-3">
+              <li class="nav-item px-3">
+                <a class="nav-link hover-link" href="premium.html"
+                  >Seja Premium</a
+                >
+              </li>
+              <li class="d-flex justify-content-center align-items-center">
+                <hr class="h-50" style="width: 2px; color: white" />
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link hover-link" href="premium.html"
+                  >Inscrever-se</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link hover-link" href="index.html">Entrar</a>
+              </li>
+            </ul>
           </div>
-  
-          <a href="" class="nav-link link-secondary py-0">nickname</a>
         </nav>
-  
-        <main class="col-10 text-white overflow-hidden d-flex flex-column">
-          
-          <header class="bg-darker">
-            <div class="d-flex px-5 py-4" id="navbarNavDropdown">
-              <form class="d-flex col-8 px-3">
-                <input class="border-0 form-control bg-dark-custom search-input" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success px-4  ms-2 fw-bold" type="submit">Buscar</button>
-              </form>
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="./img/user.png" alt="User" class="user" width="30px">
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li>
-                      <a class="dropdown-item" href="#">Meus Dados</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Configurações</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="./presentation.html">Sair</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </header>
-  
-          <section class="d-flex w-100 justify-content-between gap-3 px-5 mb-5" style="height:80%">
+      </header>
 
-            <article class="card col-8 bg-dark middle-size mt-5 pe-2">
+      <main style="height: 88%" class="bg-purple">
+        <div
+          class="
+            container
+            h-100
+            d-flex
+            justify-content-center
+            align-items-center
+          "
+        >
+          <div
+            class="
+              w-100
+              d-flex
+              gap-3
+              align-items-center
+              justify-content-between
+            "
+            style="min-height: 80%"
+          >
+            <section
+              id="seja-premium"
+              class="d-flex flex-column gap-4 py-5 px-3"
+            >
+              <p class="fw-bold">PLAYER PREMIUM</p>
+              <h1 class="display-4 fw-bold">
+                Tá acabando: 3 meses de <br />
+                Premium grátis!
+              </h1>
+              <p class="fs-4">
+                Curta músicas sem anúncios, no modo offline e muito mais. <br />
+                Cancele quando quiser
+              </p>
 
-              <div class="card-header">
-                <h5 class="card-title">Músicas</h5>
-              </div>
-
-              <div class="card-body overflow-auto">
-
-                <table class="table table-borderless align-middle border-spacing" id="song-table" style="line-height: 2;">     
-                </table>
-
-              </div>
-
-            </article>
-          
-            <section class="col-4 pt-5">
-              
-              <div class="card bg-dark card-size" id="video-music">
-                
-                <video class="ms-auto w-100" controls>
-                  <source src="" type="video/mp4" id="src-video">
-                  Your browser does not support the video tag.
-                </video>
-
-              </div>
-
+              <button class="btn btn-success rounded-pill px-4 py-2 w-50">
+                GANHE 3 MESES GRÁTIS
+              </button>
             </section>
 
-          </section>
-        </main>
-
-      </div>
-
-      <footer class="text-white shadow shadow w-100 bg-dark border-gray d-flex align-items-center ps-4" style="height: 20%">
-        <div class="col-2" id="audio-title">
-          <h2 id="title-music" class="fs-5"></h2>
-          <p id="artist-music" class="small"></p>
+            <div>
+              <img
+                src="./img/round-logo-banner.png"
+                alt="Logo do Site"
+                width="100%"
+              />
+            </div>
+          </div>
         </div>
-        <div class="col-6 ps-5 ms-3 d-flex justify-content-center" id="audio-music">
-          <audio id="audio" controls="controls" class="w-50">
-            <source src="" type="audio/mpeg" id="src-music"> Your browser does not support the audio tag.
-          </audio>
-        </div>
-      </footer>
-      
-
+      </main>
     </div>
 
     <!-- Bootstrap -->
@@ -159,16 +108,5 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
-
-    <!-- JQuery  -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Meus Scripts -->
-    <script src="./js/scripts.js"></script>
-
   </body>
 </html>

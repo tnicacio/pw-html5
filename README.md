@@ -17,6 +17,11 @@ Protótipo de site para servir de acervo para conteúdos relacionados à Tecnolo
 ### Layout
 ![find-ti-material](https://user-images.githubusercontent.com/50798315/122660287-c2c4c480-d156-11eb-832c-60cd93c4fb75.png) <br/><br/>
 
+### Tecnologias Utilizadas
+- HTML5
+- [Bootstrap](https://getbootstrap.com/)
+- [Font Awesome](https://fontawesome.com/)
+
 ## :hamburger: Pedidos Foood
 Protótipo de delivery de um restaurante. <br/>
 [Pedidos Foood](https://github.com/tnicacio/pw-html5/tree/main/03-projeto-pedidos-food) foi desenvolvido em 12/jun/2021.
@@ -30,6 +35,13 @@ Protótipo de delivery de um restaurante. <br/>
 
 ### Layout
 ![pedidos-food](https://user-images.githubusercontent.com/50798315/122660300-d07a4a00-d156-11eb-8a3e-fc5805cedca4.png) <br/><br/>
+
+### Tecnologias Utilizadas
+- HTML5
+- CSS
+- Javascript
+- [Bootstrap](https://getbootstrap.com/)
+- [Font Awesome](https://fontawesome.com/)
 
 ## :headphones: Player
 Protótipo de plataforma para ouvir e assistir vídeos de músicas. <br/>
@@ -56,3 +68,12 @@ Obs: Atualmente a opção Entrar leva à segunda página. As demais opções da 
 
 ### Layout
 ![player](https://user-images.githubusercontent.com/50798315/122660346-3a92ef00-d157-11eb-8459-a3f3829d8320.png)
+
+### Tecnologias Utilizadas
+- HTML5
+- CSS
+- Javascript
+- [Bootstrap](https://getbootstrap.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [jQuery](https://jquery.com/)
+- 

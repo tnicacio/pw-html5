@@ -1,10 +1,11 @@
 
 # PW HTML5
-> Projetos desenvolvidos na turma de HTML5 da Proway, com aulas aos sábados no período de 29/mai/2021 a 19/06/2021.
+> Projetos desenvolvidos na turma de HTML5 da Proway, com aulas aos sábados no período de 29/mai/2021 a 19/06/2021. <br/>
 > Aulas ministradas por mim, Tiago Nicácio.
 
-## Find TI Material
-Protótipo de site para servir de acervo para conteúdos relacionados à Tecnologia da Informação.
+## :computer: Find TI Material
+Protótipo de site para servir de acervo para conteúdos relacionados à Tecnologia da Informação. <br/>
+Desenvolvido em 05/jun/2021.
 
 ### Conteúdo do site
 - Barra de navegação no topo do site;
@@ -13,10 +14,11 @@ Protótipo de site para servir de acervo para conteúdos relacionados à Tecnolo
 - Footer contendo listas de links dos colaboradores, e também as redes sociais da plataforma.
 
 ### Layout
-![find-ti-material](https://user-images.githubusercontent.com/50798315/122660287-c2c4c480-d156-11eb-832c-60cd93c4fb75.png)
+![find-ti-material](https://user-images.githubusercontent.com/50798315/122660287-c2c4c480-d156-11eb-832c-60cd93c4fb75.png) <br/><br/>
 
-## Pedidos Foood
-Protótipo de delivery de um restaurante.
+## :hamburger: Pedidos Foood
+Protótipo de delivery de um restaurante. <br/>
+Desenvolvido em 12/jun/2021.
 
 ### Conteúdo do site
 - Barra de navegação no topo do site;
@@ -26,10 +28,11 @@ Protótipo de delivery de um restaurante.
 - Rodapé contendo informações do restaurante, lista dos cartões aceitos e também uma lista das redes sociais.
 
 ### Layout
-![pedidos-food](https://user-images.githubusercontent.com/50798315/122660300-d07a4a00-d156-11eb-8a3e-fc5805cedca4.png)
+![pedidos-food](https://user-images.githubusercontent.com/50798315/122660300-d07a4a00-d156-11eb-8a3e-fc5805cedca4.png) <br/><br/>
 
-## Player
+## :headphones: Player
 Protótipo de plataforma para ouvir e assistir vídeos de músicas. <br/>
+Desenvolvido em 19/jun/2021. <br/>
 https://pw-player.netlify.app
 
 ### Conteúdo do site
@@ -52,4 +55,3 @@ Obs: Atualmente a opção Entrar leva à segunda página. As demais opções da 
 
 ### Layout
 ![player](https://user-images.githubusercontent.com/50798315/122660346-3a92ef00-d157-11eb-8459-a3f3829d8320.png)
-

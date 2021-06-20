@@ -5,7 +5,8 @@
 
 ## :computer: Find TI Material
 Protótipo de site para servir de acervo para conteúdos relacionados à Tecnologia da Informação. <br/>
-Desenvolvido em 05/jun/2021.
+[Find TI Material](https://github.com/tnicacio/pw-html5/tree/main/02-projetoti) foi desenvolvido em 05/jun/2021.
+<br/>
 
 ### Conteúdo do site
 - Barra de navegação no topo do site;
@@ -18,7 +19,7 @@ Desenvolvido em 05/jun/2021.
 
 ## :hamburger: Pedidos Foood
 Protótipo de delivery de um restaurante. <br/>
-Desenvolvido em 12/jun/2021.
+[Pedidos Foood](https://github.com/tnicacio/pw-html5/tree/main/03-projeto-pedidos-food) foi desenvolvido em 12/jun/2021.
 
 ### Conteúdo do site
 - Barra de navegação no topo do site;
@@ -32,7 +33,7 @@ Desenvolvido em 12/jun/2021.
 
 ## :headphones: Player
 Protótipo de plataforma para ouvir e assistir vídeos de músicas. <br/>
-Desenvolvido em 19/jun/2021. <br/>
+[Player](https://github.com/tnicacio/pw-html5/tree/main/04-player) foi desenvolvido em 19/jun/2021. <br/>
 https://pw-player.netlify.app
 
 ### Conteúdo do site

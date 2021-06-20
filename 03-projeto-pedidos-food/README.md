@@ -11,3 +11,10 @@ Desenvolvido em 12/jun/2021.
 
 ## Layout
 ![pedidos-food](https://user-images.githubusercontent.com/50798315/122660300-d07a4a00-d156-11eb-8a3e-fc5805cedca4.png) <br/><br/>
+
+## Tecnologias Utilizadas
+- HTML5
+- CSS
+- Javascript
+- [Bootstrap](https://getbootstrap.com/)
+- [Font Awesome](https://fontawesome.com/)

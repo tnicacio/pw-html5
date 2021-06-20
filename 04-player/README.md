@@ -23,3 +23,11 @@ Obs: Atualmente a opção Entrar leva à segunda página. As demais opções da 
 
 ## Layout
 ![player](https://user-images.githubusercontent.com/50798315/122660346-3a92ef00-d157-11eb-8459-a3f3829d8320.png)
+
+## Tecnologias Utilizadas
+- HTML5
+- CSS
+- Javascript
+- [Bootstrap](https://getbootstrap.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [jQuery](https://jquery.com/)

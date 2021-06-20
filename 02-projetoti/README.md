@@ -10,3 +10,8 @@ Desenvolvido em 05/jun/2021.
 
 ## Layout
 ![find-ti-material](https://user-images.githubusercontent.com/50798315/122660287-c2c4c480-d156-11eb-832c-60cd93c4fb75.png) <br/><br/>
+
+## Tecnologias Utilizadas
+- HTML5
+- [Bootstrap](https://getbootstrap.com/)
+- [Font Awesome](https://fontawesome.com/)

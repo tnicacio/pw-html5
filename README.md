@@ -1,6 +1,6 @@
 # PW HTML5
 
-> Projetos desenvolvidos na turma de HTML5 da Proway, com aulas aos sábados no período de 29/mai/2021 a 19/06/2021. <br/>
+> Projetos desenvolvidos na turma de HTML5 da Proway, com aulas aos sábados no período de 29/mai/2021 a 19/jun/2021. <br/>
 > Aulas ministradas por mim, Tiago Nicácio.
 
 ## :computer: Find TI Material
